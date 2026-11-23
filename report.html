@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report an Item | FindIt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>FindIt</h1>
+        <p>Help reunite people with their belongings.</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="listings.html">Browse Items</a>
+        <a href="report.html">Report an Item</a>
+    </nav>
+
+    <main>
+        <section class="report-section">
+            <h2>Report a Lost or Found Item</h2>
+            <p class="section-description">
+                Share the details below to help your college community.
+            </p>
+
+            <form class="report-form" action="#" method="post">
+
+                <div class="form-group">
+                    <label for="report-type">Report Type</label>
+                    <select id="report-type" name="report-type" required>
+                        <option value="">Select report type</option>
+                        <option value="lost">I lost an item</option>
+                        <option value="found">I found an item</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="item-name">Item Name</label>
+                    <input
+                        type="text"
+                        id="item-name"
+                        name="item-name"
+                        placeholder="e.g. Black Wallet"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Category</label>
+                    <select id="category" name="category" required>
+                        <option value="">Select a category</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="bags">Bags</option>
+                        <option value="personal">Personal Belongings</option>
+                        <option value="documents">Books and Documents</option>
+                        <option value="clothing">Clothing</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input
+                        type="text"
+                        id="location"
+                        name="location"
+                        placeholder="e.g. College Library"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="date">Date Lost or Found</label>
+                    <input
+                        type="date"
+                        id="date"
+                        name="date"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Item Description</label>
+                    <textarea
+                        id="description"
+                        name="description"
+                        rows="5"
+                        placeholder="Describe the item, its colour, brand, or other identifying details..."
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact">Contact Information</label>
+                    <input
+                        type="text"
+                        id="contact"
+                        name="contact"
+                        placeholder="College email or preferred contact"
+                        required
+                    >
+                </div>
+
+                <button type="submit" class="submit-button">
+                    Submit Report
+                </button>
+
+                <p class="form-note">
+                    Please avoid sharing sensitive personal information.
+                </p>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 FindIt | College Lost and Found Portal</p>
+    </footer>
+
+</body>
+</html>
